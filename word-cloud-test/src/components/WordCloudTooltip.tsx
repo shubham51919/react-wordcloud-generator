@@ -35,10 +35,10 @@ const WordCloudTooltip: React.FC<WordCloudTooltipProps> = ({
     },
     content: {
       backgroundColor: styles.backgroundColor || '#f3f4f6',
-      color: styles.textColor || '#1f2937',
-      borderRadius: styles.borderRadius || '9999px',
+      color: styles.textColor || 'transparent',
+      borderRadius: styles.borderRadius || '0',
       padding: styles.padding || '1rem',
-      boxShadow: styles.boxShadow || '0 2px 4px rgba(0,0,0,0.1)',
+      boxShadow: styles.boxShadow || '0',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
@@ -59,9 +59,9 @@ const WordCloudTooltip: React.FC<WordCloudTooltipProps> = ({
     <div style={defaultStyles.container}>
       <div style={defaultStyles.content}>
 
-        <button className="bg-gray-900 text-[black] px-4 py-2 rounded-full text-sm font-medium">
+        <div className="text-black px-4 py-2 text-sm font-medium">
           {hoveredWord.value}
-        </button>
+        </div>
       </div>
     </div>
   )

@@ -9,7 +9,7 @@ React Wordcloud Generator is a customizable and interactive word cloud generator
 ```bash
 npm install react-wordcloud-generator
 ```
-![Example Wordcloud](./src/assets/WordCloud1.png)
+![](https://github.com/shubham51919/react-wordcloud-generator/raw/main/word-cloud-test/src/assets/WordCloud1.png)
 
 ## Usage
 
@@ -42,7 +42,7 @@ const MyComponent = () => {
       height={600}
       minFontSize={10}
       maxFontSize={50}
-      shape="circular"
+      shape="horizontal"
       colors={['#1e3a8a', '#3b82f6', '#93c5fd', '#bfdbfe']}
       callbacks={{
         onWordClick: (word) => console.log('Clicked:', word),
@@ -54,7 +54,7 @@ const MyComponent = () => {
 
 export default MyComponent
 ```
-![Example Wordcloud](./src/assets/WordCloud2.png) 
+![](https://github.com/shubham51919/react-wordcloud-generator/raw/main/word-cloud-test/src/assets/WordCloud2.png) 
 
 ## Props
 
